@@ -1,0 +1,1221 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>队列 · Laravel学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="task_scheduling.html" />
+    
+    
+    <link rel="prev" href="package_development.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="dotenv.html">
+            
+                <a href="dotenv.html">
+            
+                    
+                    多环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="directory_structure.html">
+            
+                <a href="directory_structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="valet.html">
+            
+                <a href="valet.html">
+            
+                    
+                    Valet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="request_lifecycle.html">
+            
+                <a href="request_lifecycle.html">
+            
+                    
+                    请求生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="service_container.html">
+            
+                <a href="service_container.html">
+            
+                    
+                    服务容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="service_providers.html">
+            
+                <a href="service_providers.html">
+            
+                    
+                    服务提供者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="facades.html">
+            
+                <a href="facades.html">
+            
+                    
+                    Facades
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="contracts.html">
+            
+                <a href="contracts.html">
+            
+                    
+                    契约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="routing.html">
+            
+                <a href="routing.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="middleware.html">
+            
+                <a href="middleware.html">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    CSRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="controllers.html">
+            
+                <a href="controllers.html">
+            
+                    
+                    控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="requests.html">
+            
+                <a href="requests.html">
+            
+                    
+                    请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="responses.html">
+            
+                <a href="responses.html">
+            
+                    
+                    响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="views.html">
+            
+                <a href="views.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="url_generation.html">
+            
+                <a href="url_generation.html">
+            
+                    
+                    URL生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    会话
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="error_handling.html">
+            
+                <a href="error_handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="logging.html">
+            
+                <a href="logging.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="blade.html">
+            
+                <a href="blade.html">
+            
+                    
+                    Blade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="localization.html">
+            
+                <a href="localization.html">
+            
+                    
+                    本地化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="mix/">
+            
+                <a href="mix/">
+            
+                    
+                    Laravel Mix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="mix/javascript_css_scaffolding.html">
+            
+                <a href="mix/javascript_css_scaffolding.html">
+            
+                    
+                    Javascript和CSS手脚架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="mix/compiling_assets.html">
+            
+                <a href="mix/compiling_assets.html">
+            
+                    
+                    编译资产
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="authentication.html">
+            
+                <a href="authentication.html">
+            
+                    
+                    认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="api_authentication.html">
+            
+                <a href="api_authentication.html">
+            
+                    
+                    API认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="authorization.html">
+            
+                <a href="authorization.html">
+            
+                    
+                    授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="email_verification.html">
+            
+                <a href="email_verification.html">
+            
+                    
+                    Email验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="encryption.html">
+            
+                <a href="encryption.html">
+            
+                    
+                    加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="hashing.html">
+            
+                <a href="hashing.html">
+            
+                    
+                    Hashing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="resetting_passwords.html">
+            
+                <a href="resetting_passwords.html">
+            
+                    
+                    重置密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="artisan.html">
+            
+                <a href="artisan.html">
+            
+                    
+                    Artisan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="broadcasting.html">
+            
+                <a href="broadcasting.html">
+            
+                    
+                    广播
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="cache.html">
+            
+                <a href="cache.html">
+            
+                    
+                    缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="collections.html">
+            
+                <a href="collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="file_storage.html">
+            
+                <a href="file_storage.html">
+            
+                    
+                    文件存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.41" data-path="helpers.html">
+            
+                <a href="helpers.html">
+            
+                    
+                    Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.42" data-path="mail.html">
+            
+                <a href="mail.html">
+            
+                    
+                    Mail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.43" data-path="notifications.html">
+            
+                <a href="notifications.html">
+            
+                    
+                    通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.44" data-path="package_development.html">
+            
+                <a href="package_development.html">
+            
+                    
+                    包开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.45" data-path="queues.html">
+            
+                <a href="queues.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.46" data-path="task_scheduling.html">
+            
+                <a href="task_scheduling.html">
+            
+                    
+                    任务调度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47" data-path="database/">
+            
+                <a href="database/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.47.1" data-path="database/query_builder.html">
+            
+                <a href="database/query_builder.html">
+            
+                    
+                    查询生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47.2" data-path="database/pagination.html">
+            
+                <a href="database/pagination.html">
+            
+                    
+                    分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47.3" data-path="database/migrations.html">
+            
+                <a href="database/migrations.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47.4" data-path="database/seeding.html">
+            
+                <a href="database/seeding.html">
+            
+                    
+                    Seeding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47.5" data-path="database/redis.html">
+            
+                <a href="database/redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48" data-path="eloquent/">
+            
+                <a href="eloquent/">
+            
+                    
+                    Eloquent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.48.1" data-path="eloquent/relationships.html">
+            
+                <a href="eloquent/relationships.html">
+            
+                    
+                    关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48.2" data-path="eloquent/collections.html">
+            
+                <a href="eloquent/collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48.3" data-path="eloquent/mutators.html">
+            
+                <a href="eloquent/mutators.html">
+            
+                    
+                    Mutators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48.4" data-path="eloquent/api_resources.html">
+            
+                <a href="eloquent/api_resources.html">
+            
+                    
+                    API Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48.5" data-path="eloquent/serialization.html">
+            
+                <a href="eloquent/serialization.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49" data-path="test/">
+            
+                <a href="test/">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.49.1" data-path="test/http_tests.html">
+            
+                <a href="test/http_tests.html">
+            
+                    
+                    Http测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49.2" data-path="test/console_tests.html">
+            
+                <a href="test/console_tests.html">
+            
+                    
+                    控制台测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49.3" data-path="test/browser_tests.html">
+            
+                <a href="test/browser_tests.html">
+            
+                    
+                    浏览器测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49.4" data-path="test/database_testing.html">
+            
+                <a href="test/database_testing.html">
+            
+                    
+                    数据库测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49.5" data-path="test/mocking.html">
+            
+                <a href="test/mocking.html">
+            
+                    
+                    Mocking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50" data-path="official_packages/">
+            
+                <a href="official_packages/">
+            
+                    
+                    官方包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.50.1" data-path="official_packages/cashier.html">
+            
+                <a href="official_packages/cashier.html">
+            
+                    
+                    Cashier
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.2" data-path="official_packages/dusk.html">
+            
+                <a href="official_packages/dusk.html">
+            
+                    
+                    Dusk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.3" data-path="official_packages/envoy.html">
+            
+                <a href="official_packages/envoy.html">
+            
+                    
+                    Envoy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.4" data-path="official_packages/horizon.html">
+            
+                <a href="official_packages/horizon.html">
+            
+                    
+                    Horizon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.5" data-path="official_packages/passport.html">
+            
+                <a href="official_packages/passport.html">
+            
+                    
+                    Passport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.6" data-path="official_packages/scout.html">
+            
+                <a href="official_packages/scout.html">
+            
+                    
+                    Scout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.7" data-path="official_packages/socialite.html">
+            
+                <a href="official_packages/socialite.html">
+            
+                    
+                    Socialite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50.8" data-path="official_packages/telescope.html">
+            
+                <a href="official_packages/telescope.html">
+            
+                    
+                    Telescope
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >队列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="package_development.html" class="navigation navigation-prev " aria-label="Previous page: 包开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="task_scheduling.html" class="navigation navigation-next " aria-label="Next page: 任务调度">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"队列","level":"1.45","depth":1,"next":{"title":"任务调度","level":"1.46","depth":1,"path":"task_scheduling.md","ref":"task_scheduling.md","articles":[]},"previous":{"title":"包开发","level":"1.44","depth":1,"path":"package_development.md","ref":"package_development.md","articles":[]},"dir":"neutral"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Laravel学习笔记","language":"zh-hans","gitbook":"*","description":"Laravel学习笔记"},"file":{"path":"queues.md","mtime":"2019-06-26T16:27:33.464Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-26T16:28:22.055Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
